@@ -1,0 +1,9 @@
+<div id="main-menu-mobile" class="main-menu-mobile">
+  <ul id="main-menu-mbl-ul">
+    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/#features' %}current{% endif %}">Home</a></li>
+    <li id="main-menu-mbl-li1"><a href="{{site.baseurl}}/#services" class="{% if page.url == '/' %}current{% endif %}">Services</a></li>
+    <li id="main-menu-mbl-li2"><a href="{{site.baseurl}}/#team" class="{% if page.url == '/' %}current{% endif %}">Team</a></li>
+    <li id="main-menu-mbl-li3"><a href="{{site.baseurl}}/#features" class="{% if page.url contains '/#features' %}current{% endif %}">Features</a></li>
+    <li><a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">Contact</a></li>
+  </ul>
+</div>

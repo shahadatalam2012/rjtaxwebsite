@@ -1,0 +1,9 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+    <li><a href="{{site.baseurl}}/#services">Services</a></li>
+    <li><a href="{{site.baseurl}}/#team">Team</a></li>
+    <li><a href="{{site.baseurl}}/#features">Features</a></li>
+    <li><a href="{{site.baseurl}}/contact/" class="{% if page.url contains 'contact' %}current{% endif %}">Contact</a></li>
+  </ul>
+</div>
