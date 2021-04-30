@@ -1,0 +1,107 @@
+---
+title: RJ Tax
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <h1>About us</h1>
+    <!-- <p>Our business helps hundreds of customers with their accounting and taxation needs each year.</p> -->
+    <p>RJ Consultants provides a full range of accounting and taxation services for both individual and business entities.
+      <br/><br/>
+      We understand your business processes to provide tailored solutions and proactive advice in a cost effective manner.
+      </p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <span class="about-contact"><strong>Phone: </strong> {{ site.data.contact.phone }}</span> </div>
+      <div class="call-email mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <span class="about-contact"><strong>Email: </strong>
+        <a href="mailto:{{ site.data.contact.email }}">
+          {{ site.data.contact.email }}
+        </a></span>
+      </div>
+      <!-- <div class="call-phone mb-1"> <span class="about-contact"><strong>Contact us for an obligation free quote.</strong></span> </div> -->
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container pt-5 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 header-title">
+      <h2 class="title-3 text-dark mb-2">Our Services</h2>
+    </div>
+    {% for service in site.services %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a>{{ service.title }}</a>
+          </h2>
+          {{ service.content | markdownify | strip_html }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+<div id="team" class="container pt-3 pt-md-7">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-2">Meet The Team</h2>
+    </div>
+    <div class="col-12 col-md-12">
+      <p>RJ Tax & Accountants has been established to provide tailored and proactive advice that will be suitable to individual or business clients. </p>
+    </div>
+  </div>
+</div>
+
+<div id="features" class="container pt-3 pt-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-2">Our Features</h2>
+    </div>
+    {% for feature in site.data.features %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo"
+            src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container pt-2 mb-5">
+  <div class="call w-100">
+    <div class="call-box-top">
+      <div class="call-phone mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <span class="about-contact"><strong>Phone: </strong> {{ site.data.contact.phone }}</span> </div>
+      <div class="call-email mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <span class="about-contact"><strong>Email: </strong>
+        <a href="mailto:{{ site.data.contact.email }}">
+          {{ site.data.contact.email }}
+        </a></span>
+      </div>
+      <div class="call-phone mb-1"> <span class="about-contact"><strong>Contact us for an obligation free quote.</strong></span> </div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+---
+title: Contact
+layout: default
+bodyClass: page-team-list
+<!-- bodyClass: page-contact -->
+---
+
+<div class="intro pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Contact</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12 mb-5">
+      <ul class="pl-0">
+        <li class="mb-1"><span class="address-icon"><i class="fas fa-phone-alt"></i></span> <strong>Phone: </strong>{{ site.data.contact.phone }}</li>
+        <li class="mb-1"><span class="address-icon"><i class="far fa-envelope"></i></span> <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+            {{ site.data.contact.email }}</a></li>
+        {% if site.data.contact.address %}
+        <li class="mb-1"><h4 class="mt-3">Address</h4>{{ site.data.contact.address }}
+          <ul class="pl-0">
+            <!-- <li><span>1.</span> {{ site.data.contact.address1 }}</li>
+            <li><span>2.</span> {{ site.data.contact.address2 }}</li> -->
+            <li class="mt-1"><span class="address-icon"><i class="fas fa-map-marker-alt"></i></span>  {{ site.data.contact.address1 }}</li>
+            <li class="mt-1"><span class="address-icon"><i class="fas fa-map-marker-alt"></i></span>  {{ site.data.contact.address2 }}</li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+
+      <div class="business-hours-card mt-3">
+        <h4 class="mt-4">Business Hours</h4>
+      <table class="table table-sm opening-hours-table">
+        <tr>
+          <td class="day font-weight-bold">Monday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Tuesday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Wednesday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Thursday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Friday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Saturday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Sunday</td>
+          <td class="opens">8:00am</td>
+          <td>-</td>
+          <td class="closes">10:00pm</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
